@@ -1,0 +1,57 @@
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown {
+    width: fit-content;
+}
+
+
+/* cell highlight feature is here*/
+.dropdownContent *,
+.dropdownButton {
+    padding: 4px 5px 4px 5px;
+    background-color:#f0f0f0;
+}
+
+.dropdownContent *:hover,
+.dropdownButton:hover {
+    border: 1px solid gray;
+}
+/**/
+
+
+/* The dropdown feature */
+.dropdownContent {
+    display: none;
+}
+
+.dropdown:hover .dropdownContent{
+    display: block;
+}
+/**/
+
+
+/* Cell highlight feature for the #rigidDropdown. This feature is specifically for #rigidDropdown. Whereas all the other .dropdown uses the standard dropdown feature*/
+#rigidDropdown .dropdownContent *,
+#rigidDropdown .dropdownButton {
+    border: 1px solid #f0f0f0; /* same color as background of the cells of dropdown menu */
+}
+
+#rigidDropdown .dropdownContent *:hover,
+#rigidDropdown .dropdownButton:hover {
+    border: 1px solid gray; 
+}
+/**/
+
+
+/* Note about how css html works. In code above, i expected that the gray border in #rigidDropdown will appear due to code on line. But this doesnt happen because of selectors order of preference.*/
+
+
+
+
+
+.dropdownContent a {
+    display:block;
+}

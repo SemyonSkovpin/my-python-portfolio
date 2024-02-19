@@ -1,0 +1,16 @@
+#board {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    width:fit-content;
+    margin: 80px auto 80px auto;
+    border: 1px solid gray;
+}
+
+.boardCell {
+    border: 2px solid gray;
+    width: 100px;
+    height: 100px;
+}
+
+
+

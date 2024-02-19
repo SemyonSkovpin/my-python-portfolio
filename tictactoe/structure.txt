@@ -1,0 +1,55 @@
+(HTML)
+DOM document
+
+    board
+        cell
+        cell
+        cell
+        ...
+
+
+
+JS
+
+    boardObject
+        matrix
+        currentTurn
+        makeTurn (cellCr)
+            it will ignore calls to replace alredy occupied cells
+        winCheck
+            return null or [<winner>, <coordinates of scoring cells>]
+        reset
+
+    for every cell: onclick: 
+        boardObject.makeTurn()
+        boardTurnUpdate ()
+        if boardObject.winCheck:
+            boardWinUpdate
+
+        boardTurnUpdate
+            take boardObject.matrix and add O,X elements into cells
+        
+        boardWinUpdate:
+            take return from boardObject.winCheck
+            add line element inside board element. overlay it
+            add winbanner elements
+            after winbanner exit:
+                reset board DOM element
+                reset board boardObject
+                
+
+
+CSS
+
+board {}
+cells {}
+x, o {}
+line {}
+winBanner {} 
+/* board and cells have position: absolute */
+
+
+
+
+
+
