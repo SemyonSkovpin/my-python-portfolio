@@ -1,10 +1,7 @@
 # my-python-portfolio
-
-This repository stores small Python projects I coded throughout 1 year of learning Python.
-
 Recommend to first look at: tictactoe, otherAlgorithms/BFS.py, otherAlgorithms/weightedBFS.py
 
-Some other are:
+Some other projects are:
 - basic algorithms for solving optimisation problems 
 - knapsack problem solver
 - algorithm to find all permutations of a set
