@@ -4,7 +4,7 @@ This repository stores small Python projects I coded throughout 1 year of learni
 
 Recommend to first look at: tictactoe, otherAlgorithms/BFS.py, otherAlgorithms/weightedBFS.py
 
-Some other of them are:
+Some other are:
 - basic algorithms for solving optimisation problems 
 - knapsack problem solver
 - algorithm to find all permutations of a set
